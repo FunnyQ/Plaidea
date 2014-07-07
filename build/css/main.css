@@ -6924,6 +6924,11 @@ textarea {
  ** 一般全域設定
  ******************************************************************************
  ***************************************************************************** */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 body {
   background-color: #222222; }
 
@@ -6955,9 +6960,6 @@ body {
         clear: both; } }
 
 .unit {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   width: 100%;
   float: left;
   padding-left: 0.83333%;
@@ -6966,9 +6968,6 @@ body {
   margin-top: 10px; }
   @media (min-width: 480px) {
     .unit {
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
       width: 50%;
       float: left;
       padding-left: 0.83333%;
@@ -6983,9 +6982,6 @@ body {
         clear: none; } }
   @media (min-width: 960px) {
     .unit {
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
       width: 33.33333%;
       float: left;
       padding-left: 0.83333%;
@@ -7031,17 +7027,11 @@ body {
     .unit .button_set .found_bar:hover {
       background-color: #95c502; }
   .unit .button_set .follow_num, .unit .button_set .founded {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     width: 75%;
     float: left;
     padding-left: 0.83333%;
     padding-right: 0.83333%; }
   .unit .button_set .button {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     width: 25%;
     float: left;
     padding-left: 0.83333%;
@@ -7052,18 +7042,12 @@ body {
       color: #fefffd;
       font-size: 1.5em; }
   .unit .button_set .title {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     width: 41.66667%;
     float: left;
     padding-left: 0.83333%;
     padding-right: 0.83333%;
     text-align: right; }
   .unit .button_set .number, .unit .button_set .amount {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     width: 58.33333%;
     float: left;
     padding-left: 0.83333%;
