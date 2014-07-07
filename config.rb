@@ -6,6 +6,7 @@
 # using :nested for develop & :compressed for production <==========
 compass_config do |config|
   config.output_style = :nested
+  config.line_comments = false
 end
 
 ###
