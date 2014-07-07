@@ -1,0 +1,69 @@
+// project 列表原件單位
+.unit
+  +span(12)
+  padding: 20px
+  margin-top: 10px
+
+  +breakpoint(480px)
+    +gallery(6)
+
+  +breakpoint(960px)
+    +gallery(4)
+
+  // 標題欄位
+  .title_bar
+    background-color: #1d1d1d
+    color: #fff
+    padding: 2px 10px
+    // 專案分類
+    .category
+      float: left
+    // 專案名稱
+    .project_name
+      float: right
+      margin-top: 13px
+      font-size: 1.1em
+
+  // 按鈕欄位
+  .button_set
+    p
+      margin: 0
+      color: #fefffd
+      font-weight: bold
+      font-size: 1.4em
+    // 兩個按鈕條的基本設定
+    .follow_bar, .found_bar
+      transition: all 0.5s
+      padding: 10px
+      &:hover
+        text-shadow: 0 1px 1px #000
+    // follow 按鈕背景設定
+    .follow_bar
+      background-color: #fe3e3e
+      &:hover
+        background-color: lighten(#fe3e3e, 5%)
+    // found 按鈕背景設定
+    .found_bar
+      background-color: #82ac02
+      &:hover
+        background-color: lighten(#82ac02, 5%)
+    // 按鈕左半部
+    .follow_num, .founded
+      +span(9)
+    // 按鈕又半部
+    .button
+      +span(3)
+      text-align: center
+      border-left: 1px solid rgba(#fff, 0.3)
+      a
+        color: #fefffd
+        font-size: 1.5em
+    // 按鈕標題
+    .title
+      +span(5)
+      text-align: right
+    // 按鈕數字顯示
+    .number, .amount
+      +span(7)
+      padding-left: 10px
+      text-align: left
